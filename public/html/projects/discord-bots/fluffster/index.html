@@ -134,7 +134,7 @@
         </header>
         <main role="main" class="inner cover">
 
-            <h3 class="mt-5">The prefix is set to <code>-</code> by default but can by changed via the settings</h3>
+            <h3 class="mt-5">The prefix is set to <code>fluff</code> and can not be changed</h3>
 
             <table class="mt-5 table table-striped table-dark">
 
@@ -158,122 +158,64 @@
                         <td></td>
                     </tr>
                     <tr>
-                        <td><code>help image</code></td>
-                        <td>Shows a list of all the images you can get the bot to send</td>
+                        <td><code>donate</code></td>
+                        <td>Shows you a QR code and a URL to donate to help fund the development</td>
                         <td><code>fox</code></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><code>[image]</code></td>
-                        <td>Sends an image from the API, you can view the commands via <code>help image</code> or <a href="/api/images">the API's endpoints</a></td>
-                        <td><code>fox</code></td>
+                        <td><code>role</code></td>
+                        <td>Gives the member the role they choose</td>
+                        <td><code>role Fox</code> gives the member the <kbd>Fox</kbd> role.</td>
+                        <td>There are no limitation the member can add or remove any role under Fluffster's role.</td>
+                    </tr>
+                    <tr>
+                        <td><code>purge</code></td>
+                        <td>Purges x amount of messages</td>
+                        <td><code>purge 6</code></td>
+                        <td>Can only be used by an admin.</td>
+                    </tr>
+                    <tr>
+                        <td><code>sauce</code></td>
+                        <td>Returns the image source from form sites such as e926</td>
+                        <td><code>sauce https://static1.e926.net/data/94/d1/94d108d2e4ed476a113f93e7768accce.jpg</code> or <code>sauce</code> then attach the image</td>
+                        <td>Service provided by <a href="https://saucenao.com/">SauceNAO</a>'s API, images may not be correct</td>
+                    </tr>
+                    <tr>
+                        <td><code>poll</code></td>
+                        <td>Makes a poll with a title and reaction options</td>
+                        <td><code>poll title<br>option1<br>option2</code></td>
+                        <td>The title is next the poll command and each option is on a new line, max 27</td>
+                    </tr>
+                    <tr>
+                        <td><code>settle</code></td>
+                        <td>If two or more people are arguing, you can type <code>settle @user1 @user2 etc</code> and fluffster will create a temporary channel, only mods and the pinged users will be able to see it, and the ping users won't be able to message
+                            in any other channel. To end, a mod must type <code>settle end</code> in that channel. Fluffster will delete the channels and allow the users to message elsewhere.</td>
+                        <td><code>fluffsettle @users</code></td>
+                        <td>Can only be used by an admin.</td>
+                    </tr>
+                    <tr>
+                        <td><code>imafox</code></td>
+                        <td>Set's user's nickname to <kbd>Fluffy Fox</kbd></td>
+                        <td><code>imafox</code></td>
+                        <td>Fluffster's role needs to be higher then the users to be able to change nicks</td>
+                    </tr>
+                    <tr>
+                        <td><code>wishlist</code></td>
+                        <td>Your own personal wishlist</td>
+                        <td><code>wishlist item</code></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><code>ping</code></td>
-                        <td>Pong</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><code>list</code> or <code>lists</code></td>
-                        <td>Dymanic response</td>
-                        <td>list</td>
-                        <td>if member doesn't have any lists, it will ask to create a new list, commands are preformed by saying the number or name in chat</td>
-                    </tr>
-                    <tr>
-                        <td><code>flipacoin</code> or <code>flipcoin</code> or <code>flip-a-coin</code> or <code>flip</code> or <code>coin</code></td>
-                        <td>Either <code>It's Heads!</code> or <code>It's Tails!</code></td>
-                        <td></td>
+                        <td><code>ticket</code> or <code>issue</code></td>
+                        <td><a href="https://github.com/Aikufurr/Website/issues">URL to submit an issue</a></td>
+                        <td><code>ticket</code> or <code>issue</code></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><code>invite</code></td>
-                        <td>My Invite Link: ...</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><code>setting</code> or <code>settings</code></td>
-                        <td>Menu of settings to choose from to change</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><code>remindme</code></td>
-                        <td>Sets a reminder, DM's member once it's time</td>
-                        <td><code>remindme 1d Do something</code> <code>remindme 4m Do something</code> <code>remindme 20s Do something</code></td>
-                        <td>Accepted formats: <code>ny:nw:nd:nh:nm:ns</code> where <code>n</code> is a number</td>
-                    </tr>
-                    <tr>
-                        <td><code>rank</code></td>
-                        <td>Shows your rank in the server out of everyone, or the pinged member's</td>
-                        <td><code>rank</code> or <code>rank @member</code></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><code>avatar</code></td>
-                        <td>Shows your avatar, or the pinged member's</td>
-                        <td><code>rank</code> or <code>rank @member</code></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><code>play</code></td>
-                        <td>Plays a youtube URL or playlist</td>
-                        <td><code>play https://www.youtube.com/watch?v=_AtP7au_Q9w</code></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><code>pause</code></td>
-                        <td>Pauses the currently playing song</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><code>resume</code></td>
-                        <td>Resumes the currently playing song</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><code>skip</code></td>
-                        <td>Skips the currently playing song</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><code>loop</code></td>
-                        <td>Loops the currently playing song</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><code>stop</code></td>
-                        <td>Stops the currently playing song and removes the queue</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><code>queue</code></td>
-                        <td>Lists all the URLs in the queue</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><code>shuffle</code></td>
-                        <td>Shuffles the queue</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><code>volume</code></td>
-                        <td>Changes the song's volume</td>
-                        <td><code>volume 0.7</code></td>
-                        <td>Ranges from 0 to 1</td>
-                    </tr>
-                    <tr>
-                        <td><code>ytinfo</code></td>
-                        <td>Brings up very basic info on a youtube song</td>
-                        <td><code>ytinfo URL</code></td>
+                        <td><code>[action/animal]</code></td>
+                        <td>Return an image or an action from the list of <a href="/api/images">endpoints</a></td>
+                        <td><code>fox</code> or <code>cat</code> etc.. or <code>hug/cuddle/boop/lick/kiss @user</code></td>
                         <td></td>
                     </tr>
                 </tbody>
